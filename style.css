@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: linen;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.confirm-btn {
+	background: aquamarine;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+.modal-container {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	padding: 50px;
+	border-radius: 5px;
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.close-btn {
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 25px;
+}
+
+.modal-title {
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.modal-body {
+	padding-bottom: 20px;
+}
+
+.agree-btn {
+	border: none;
+	filter: drop-shadow(0 0 1px black);
+	border-radius: 2px;
+	padding: 15px;
+	align-self: center;
+	cursor: pointer;
+}
